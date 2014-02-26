@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <title>Express</title>
+
+</head>
+<body>
+
+<div class="container-fluid">
+<p></p>
+    <form class="form-horizontal" role="form">
+
+        <!-- ORIGIN-->
+        <div class="form-group">
+            <label for="inputOrigin" class="col-md-1 control-label">Origin</label>
+            <div class="col-md-4">
+                <select class="form-control" id="inputOrigin" disabled>
+                    <option>MILLENIUM MIRAROAD</option>
+                </select>
+            </div>
+        </div>
+
+        <!--NUMBER, DATE, CUSTOMER ROW-->
+        <div class="form-group">
+            <!--NUMBER-->
+            <label for="inputNumber" class="col-md-1 control-label">Number</label>
+            <div class="col-md-1">
+                <input type="text" class="form-control" id="inputNumber" value="1" disabled/>
+            </div>
+
+            <!--DATE-->
+            <label for="inputDate" class="col-md-1 control-label">Date</label>
+            <div class="col-md-2">
+                <input type="date" class="form-control" id="inputDate" value="01/12/2014"/>
+            </div>
+
+            <!--CUSTOMER-->
+            <label for="inputCustomer" class="col-md-1 control-label">Customer *</label>
+            <div class="col-md-4">
+                <div class="input-group">
+                    <span class="input-group-addon glyphicon glyphicon-search"></span>
+                    <input type="text" id="inputCustomer" class="form-control" value="ARSHI ARIF KHAN">
+                </div>
+            </div>
+        </div>
+
+        <!-- ORDER NO, ORDER DATE, BILL AMT, OTHER REF -->
+        <div class="form-group">
+            <!--ORDER NO-->
+            <label for="inputOrderNumber" class="col-md-1 control-label">Order No *</label>
+            <div class="col-md-1">
+                <input type="text" class="form-control" id="inputOrderNumber" value="1"/>
+            </div>
+
+            <!--ORDER DATE-->
+            <label for="inputOrderDate" class="col-md-1 control-label">Order Date</label>
+            <div class="col-md-2">
+                <input type="date" class="form-control" id="inputOrderDate" value="01/12/2014"/>
+            </div>
+
+            <!--BILL AMT-->
+            <label for="inputBillAmt" class="col-md-1 control-label">Bill Amt *</label>
+            <div class="col-md-2">
+                <input type="number" class="form-control" id="inputBillAmt" value="1125.00"/>
+            </div>
+
+            <!--OTHER REF-->
+            <label for="inputOtherRef" class="col-md-1 control-label">Other Ref</label>
+            <div class="col-md-2">
+                <input type="text" class="form-control" id="inputOtherRef" value="1"/>
+            </div>
+        </div>
+
+        <!-- SALES PERSON, HYPOTICATION, NARRATION -->
+        <div class="form-group">
+            <!--SALES PERSON-->
+            <label for="inputSalesPerson" class="col-md-1 control-label">Sales Person</label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="inputSalesPerson" value="1"/>
+            </div>
+
+            <!--HYPOTICATION-->
+            <label for="inputHypotication" class="col-md-1 control-label">Hypotication</label>
+            <div class="col-md-2">
+                <div class="input-group">
+                    <span class="input-group-addon glyphicon glyphicon-search"></span>
+                    <input type="text" id="inputHypotication" class="form-control" placeholder="Type to search..."/>
+                </div>
+            </div>
+
+            <!--NARRATION-->
+            <label for="inputNarration" class="col-md-1 control-label">Narration</label>
+            <div class="col-md-2">
+                <input type="text" class="form-control" id="inputNarration" value="BEING SALE OF NEW VEHICLE TO ARSHI ARIF KHAN"/>
+            </div>
+        </div>
+
+        <!-- GROSS AMOUNT, ADDLESS, NETAMOUNT-->
+        <div class="form-group">
+            <!--GROSS AMOUNT-->
+            <label for="inputGrossAmt" class="col-md-1 control-label">Gross Amt</label>
+            <div class="col-md-4">
+                <input type="number" class="form-control" id="inputGrossAmt" value="1125.00" disabled/>
+            </div>
+
+            <!--ADDLESS-->
+            <label for="inputAddless" class="col-md-1 control-label">Addless</label>
+            <div class="col-md-2">
+                <input type="number" class="form-control" id="inputAddless" value="0.00" disabled/>
+            </div>
+
+            <!--NETAMOUNT-->
+            <label for="inputNetAmt" class="col-md-1 control-label">NetAmount</label>
+            <div class="col-md-2">
+                <input type="number" class="form-control" id="inputNetAmt" value="1125.00" disabled/>
+            </div>
+        </div>
+
+        <!-- DSA, RTO.Location-->
+        <div class="form-group">
+            <!--DSA-->
+            <label for="inputDSA" class="col-md-1 control-label">DSA</label>
+            <div class="col-md-4">
+                <input type="number" class="form-control" id="inputDSA"/>
+            </div>
+
+            <!--RTO.Location-->
+            <label for="inputRtoLocation" class="col-md-1 control-label">RTO.Location</label>
+            <div class="col-md-2">
+                <select class="form-control" id="inputRtoLocation">
+                    <option>VASAI</option>
+                </select>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- LOAD SCRIPTS AFTER PAGE IS LOADED -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="javascripts/bootstrap.min.js"></script>
+
+</body>
+</html>

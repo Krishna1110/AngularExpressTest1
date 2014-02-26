@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>First Angular App</title>
+</head>
+<body>
+<h1>First Angular App</h1>
+<input type="text" ng-model="myModel">
+<p>Hello {{name}}, You Typed: {{myModel}}</p>
+
+<div ng-controller="MyController">
+    {{person.age}} <br >
+    {{name}}
+
+</div>
+
+<div ng-controller="CounterController">
+    <h1>Count is : {{counter.count}}</h1>
+    <input type="button" ng-click="counter.increment(1)" value="Increment By 1"/>
+    <input type="button" ng-click="counter.decrement(1)" value="Decrement By 1"/>
+</div>
+
+<div ng-controller="ExpressionController">
+    <input type="text" ng-model="expression.expr"/>
+    <h3>{{expression.value}}</h3>
+    <input type="button" ng-click="expression.add(1)" value="Add expression by 1"/>
+
+</div>
+<script src="javascripts/angular.min.js"></script>
+<script src="javascripts/main.js"></script>
+
+</body>
+</html>
